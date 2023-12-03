@@ -14,9 +14,9 @@ export const getNestedAnimeResponse = async(resourse, objectProperty) => {
 }
 
 export const reproduce = (data, gap) => {
-  const first = ~~(Math.random() * (data.length  - gap) +1)
+  const first = ~~(Math.random() * (data?.length  - gap) +1)
   const last = first + gap
   return data = {
-    data :  data.slice(first, last)
+    data :  data?.slice(first, last)
   }
 }
