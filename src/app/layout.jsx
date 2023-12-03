@@ -1,8 +1,8 @@
-import { Gabarito } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 import Navbar from "../component/Navbar";
 
-const gabarito = Gabarito({ subsets: ["latin"] });
+const gabarito = Rubik({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Cuy Anime List",
