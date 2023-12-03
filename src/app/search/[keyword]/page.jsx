@@ -1,4 +1,3 @@
-import { decode } from "jsonwebtoken";
 import AnimeList from "../../../component/AnimeList";
 import { GetAnimeResponse } from "@/services/api-services";
 
