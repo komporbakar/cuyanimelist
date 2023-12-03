@@ -3,7 +3,8 @@ import Image from "next/image";
 import VideoPlayer from "@/component/utils/VideoPlayer";
 
 const Page = async ({ params: { id } }) => {
-  const { data } = await GetAnimeResponse(`anime/${id}`);
+  const anime = await GetAnimeResponse(`anime/${id}`);
+  const data = anime?.data;
   return (
     <>
       <div className="pt-4 px-4">
@@ -31,8 +32,8 @@ const Page = async ({ params: { id } }) => {
       </div>
       <div className="pt-4 px-4 gap-2 flex sm:flex-nowrap flex-wrap text-color-primary">
         <Image
-          src={data?.images.webp.image_url}
-          alt={data?.images.jpg.image_url}
+          src={data?.images?.webp.image_url}
+          alt={data?.images?.jpg.image_url}
           width={250}
           height={250}
           className="w-full rounded object-cover"
