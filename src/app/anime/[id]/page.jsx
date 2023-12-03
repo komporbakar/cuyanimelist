@@ -1,5 +1,4 @@
 import { GetAnimeResponse } from "@/services/api-services";
-import React from "react";
 import Image from "next/image";
 import VideoPlayer from "@/component/utils/VideoPlayer";
 
